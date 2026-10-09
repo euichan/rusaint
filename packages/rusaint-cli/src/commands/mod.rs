@@ -7,6 +7,7 @@ pub mod graduation;
 pub mod personal_schedule;
 pub mod registration;
 pub mod scholarships;
+pub mod registration_fee;
 pub mod student_info;
 
 use clap::Subcommand;
@@ -59,5 +60,10 @@ pub enum Commands {
     Scholarships {
         #[command(subcommand)]
         command: scholarships::ScholarshipsCommands,
+    },
+    /// 등록(학생회비 납부확인서) 조회·recon
+    RegistrationFee {
+        #[command(subcommand)]
+        command: registration_fee::RegistrationFeeCommands,
     },
 }

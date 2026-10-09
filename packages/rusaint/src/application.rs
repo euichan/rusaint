@@ -35,4 +35,7 @@ pub mod lecture_assessment;
 
 /// 장학금 수혜내역 조회: [`ScholarshipsApplication`](scholarships::ScholarshipsApplication)
 pub mod scholarships;
+
+/// 등록(납부확인서 등): [`RegistrationFeeApplication`](registration_fee::RegistrationFeeApplication)
+pub mod registration_fee;
 pub(crate) mod utils;

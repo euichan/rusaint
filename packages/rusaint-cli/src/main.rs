@@ -91,6 +91,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             let session = session::get_session(cli.session_file.as_deref(), false).await?;
             commands::scholarships::execute(session, command, format, output).await?;
         }
+        Commands::RegistrationFee { command } => {
+            let session = session::get_session(cli.session_file.as_deref(), false).await?;
+            commands::registration_fee::execute(session, command, format, output).await?;
+        }
     }
 
     Ok(())

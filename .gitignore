@@ -54,3 +54,9 @@ languages/swift/RusaintFFI.xcframework/
 .gradle
 
 
+
+# 로컬 전용 — 학적 세션·recon 산출물(학번·금액 포함). 커밋 금지.
+session.json
+*recon*.json
+fee-recon*.json
+SSU-FEE-HANDOFF.md
